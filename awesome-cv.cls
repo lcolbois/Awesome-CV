@@ -76,12 +76,20 @@
 % Needed to manage math fonts
 \RequirePackage{unicode-math}
 % Needed to use icons from font-awesome
-\RequirePackage{fontawesome6}
+\RequirePackage{fontawesome5}
+% --- START COMPATIBILITY FIX ---
+% Map new FontAwesome 6 names to old FontAwesome 5 icons
+\providecommand{\faHouseChimney}{\faHome}
+\providecommand{\faSquareGithub}{\faGithubSquare}
+\providecommand{\faMobileScreenButton}{\faMobile}
+\providecommand{\faSquareXTwitter}{\faTwitterSquare}
+\providecommand{\faLinkedin}{\faLinkedinIn}
+% --- END COMPATIBILITY FIX ---
 \RequirePackage{accsupp}
 \defaultfontfeatures{
   Renderer=HarfBuzz,
 }
-\setmainfont{Source Sans 3}[
+\setmainfont{Source Sans Pro}[
   UprightFont=*,
   ItalicFont=* Italic,
   BoldFont=* Bold,
@@ -89,7 +97,7 @@
   FontFace={l}{n}{Font=* Light},
   FontFace={l}{it}{Font=* Light Italic},
 ]
-\setsansfont{Source Sans 3}[
+\setsansfont{Source Sans Pro}[
   UprightFont=*,
   ItalicFont=* Italic,
   BoldFont=* Bold,
