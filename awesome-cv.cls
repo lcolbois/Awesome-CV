@@ -84,6 +84,7 @@
 \providecommand{\faMobileScreenButton}{\faMobile}
 \providecommand{\faSquareXTwitter}{\faTwitterSquare}
 \providecommand{\faLinkedin}{\faLinkedinIn}
+\providecommand{\faCakeCandles}{\faBirthdayCake}
 % --- END COMPATIBILITY FIX ---
 \RequirePackage{accsupp}
 \defaultfontfeatures{

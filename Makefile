@@ -10,9 +10,10 @@ AUXDIR = $(OUTDIR)/temp
 # 2. LATEXMK CONFIGURATION
 # -pdf       : Generate PDF
 # -lualatex  : Use LuaLaTeX
+# -synctex=1 : Generate SyncTeX file for editor synchronization
 # -outdir    : Output all intermediate files to the temp folder
 # -interaction=nonstopmode : Don't stop for errors
-LATEXMK = latexmk -pdf -lualatex -outdir=$(AUXDIR) -interaction=nonstopmode
+LATEXMK = latexmk -pdf -lualatex -synctex=1 -outdir=$(AUXDIR) -interaction=nonstopmode
 
 # 3. FILE DISCOVERY (Automatic)
 # Finds all .tex files to build the default "all" target
