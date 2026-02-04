@@ -9,7 +9,18 @@
 *.toc
 *.synctex.gz
 *.fdb_latexmk
-builds/temp/*.pdf
+
+## Build folders (keep PDFs tracked or untracked as you prefer)
+# Option 1: Ignore all build artifacts including PDFs
+applications/*/build/
+shared/build/
+
+# Option 2: Keep PDFs, ignore only temp files (uncomment below, comment above)
+# applications/*/build/*.aux
+# applications/*/build/*.log
+# applications/*/build/*.fls
+# applications/*/build/*.fdb_latexmk
+# applications/*/build/*.synctex.gz
 
 ## Intermediate documents:
 *.dvi
