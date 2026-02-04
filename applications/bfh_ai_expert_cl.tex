@@ -1,0 +1,153 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+% \definecolor{sectiondivider}{HTML}{5D5D5D}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+% \photo[rectangle,edge,right]{./examples/profile}
+\name{Laurent}{Colbois}
+\position{AI/ML Expert{\enskip\cdotp\enskip}PhD in Machine Learning \& Biometrics}
+\address{Rue du Rhône 2, 1920 Martigny, Switzerland}
+
+\mobile{+41 79 942 29 61}
+\email{laurent.colbois@gmail.com}
+%\dateofbirth{January 1st, 1970}
+%\homepage{www.posquit0.com}
+%\github{posquit0}
+\linkedin{lcolbois}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{medium-id}
+% \kaggle{kaggle-id}
+% \hackerrank{hackerrank-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra information}
+
+\quote{``To create a positive impact through technology while following sustainable practices."}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Recruitment Team}
+  {Berner Fachhochschule (BFH)\\Bern, Switzerland}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Bewerbung als Fachverantwortliche*r Künstliche Intelligenz}
+% How the letter is opened
+\letteropening{Sehr geehrte Damen und Herren,}
+% How the letter is closed
+\letterclosing{Mit freundlichen Grüssen,}
+% Any enclosures with the letter
+\letterenclosure[Beiliegend]{Lebenslauf}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal information
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[C]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Laurent Colbois~~~·~~~Cover Letter}
+  {}
+
+% Print the title with above letter information
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+\lettersection{Why This Role Resonates With Me}
+After five years of research at Idiap, I have discovered that what energizes me most is not producing my own research outputs, but rather enabling others to succeed with theirs. Throughout my PhD and postdoc, I found greatest satisfaction when supporting master's students on their projects, when explaining AI concepts to forensic practitioners, and when coordinating cross-functional teams to solve shared problems. The position of AI Expert at BFH appeals to me precisely because supporting, advising, training, and connecting people across teaching, research, and operations \textit{is} the core mission—not a side activity.
+
+The description of working with "einem bunten Haufen aufgestellter Menschen mit ganz unterschiedlichen Biografien" captures what I seek: a role where variety and interdisciplinary collaboration are central, where I can help many different people tackle diverse AI challenges rather than focusing narrowly on a single technical problem.
+
+\lettersection{What I Bring to the Role}
+\textbf{AI/ML Expertise \& Practical Experience:} My PhD and postdoc at Idiap provided deep expertise in machine learning, deep learning, computer vision, and most recently Vision-Language Models. I have hands-on experience with modern ML frameworks (PyTorch, Huggingface Transformers, vLLM), MLOps tools (Weights \& Biases, MLFlow, Hydra), and HPC/GPU infrastructure (Slurm clusters, containerization). I understand both the technical foundations and the practical challenges of applying AI in research contexts.
+
+\textbf{Teaching, Mentoring \& Support:} I supervised four master's students, taught an annual course on forensic evaluation methods, and regularly served as the "go-to person" in my lab for questions about reproducible workflows, experiment tracking, and code quality. I understand how to meet people where they are—whether explaining concepts to beginners or troubleshooting technical details with experienced researchers.
+
+\textbf{Communication Across Audiences:} Throughout my work, I've successfully translated complex AI topics for diverse stakeholders: forensic scientists, police forces, legal personnel, and most recently investors and business mentors during a startup hackathon. I adapt my communication style to audience background, balancing technical accuracy with accessibility. This skill is essential for the central coordination and support role at BFH.
+
+\textbf{Project Coordination \& Stakeholder Management:} My experience coordinating a forensic data collection platform—managing communication between researchers, developers, and legal staff—taught me the importance of clear requirements, prioritization, and maintaining structured communication channels across different organizational units.
+
+\lettersection{Language Note \& Practical Details}
+I am fully fluent in French (mother tongue) and English. Regarding German: I achieved B2 level and spent 5 months during military service working entirely in German. However, I have not used German professionally in recent years, so I would need some time to reactivate fluency. I am committed to doing so and confident that immersion in a German-speaking work environment would accelerate this process. I recognize that supporting BFH colleagues in German is part of the role, and I am prepared to invest in language development as needed.
+
+I am Swiss, available to start in mid-May 2026, and open to the commute to Bern with the possibility of remote work. My salary expectation is in the range of 100-120K CHF (pro-rata for 80-100\%), though I am open to discussion based on the role and institutional context.
+
+\lettersection{Looking Forward}
+I would be excited to contribute to BFH's AI journey by helping teaching staff, researchers, and administrative teams navigate AI tools and methods effectively. This position aligns perfectly with my strengths, values, and vision for meaningful work that enables others to succeed.
+
+Thank you for considering my application. I look forward to discussing how I can support BFH's community in adopting and leveraging AI responsibly and effectively.
+
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter information
+\makeletterclosing
+
+\end{document}

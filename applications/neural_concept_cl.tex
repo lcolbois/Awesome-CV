@@ -1,0 +1,151 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+% \definecolor{sectiondivider}{HTML}{5D5D5D}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+% \photo[rectangle,edge,right]{./examples/profile}
+\name{Laurent}{Colbois}
+\position{ML Engineer{\enskip\cdotp\enskip}PhD in Machine Learning \& Biometrics}
+\address{Rue du Rhône 2, 1920 Martigny, Switzerland}
+
+\mobile{+41 79 942 29 61}
+\email{laurent.colbois@gmail.com}
+%\dateofbirth{January 1st, 1970}
+%\homepage{www.posquit0.com}
+%\github{posquit0}
+\linkedin{lcolbois}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{medium-id}
+% \kaggle{kaggle-id}
+% \hackerrank{hackerrank-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra information}
+
+\quote{``To create a positive impact through technology while following sustainable practices."}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Application Engineering Team}
+  {Neural Concept SA\\Lausanne, Switzerland}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Application for ML Application Engineer (French-speaking)}
+% How the letter is opened
+\letteropening{Dear Hiring Team,}
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+\letterenclosure[Attached]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal information
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[C]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Laurent Colbois~~~·~~~Cover Letter}
+  {}
+
+% Print the title with above letter information
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+\lettersection{Why Neural Concept}
+I am excited to apply for the ML Application Engineer position at Neural Concept. Your mission to revolutionize engineering workflows through the combination of 3D deep learning and physics-based simulation resonates deeply with my background and aspirations. Having studied numerical simulations and computational physics during my Master's at EPFL, and then specialized in deep learning during my PhD, I see Neural Concept as the perfect bridge between these two worlds—applying cutting-edge ML to solve real engineering challenges in aerospace, automotive, and energy.
+
+\lettersection{Bridging Engineering, ML, and Communication}
+My unique combination of skills positions me well for this customer-facing role:
+
+\textbf{Engineering \& Physics Foundation:} My Master's in Computational Science \& Engineering at EPFL provided solid foundations in numerical methods—discretization algorithms, numerical solvers, and physics-based modeling. While my recent work has focused on deep learning, I am eager to reactivate and deepen this knowledge in an applied industrial context where ML meets engineering simulation.
+
+\textbf{Machine Learning Expertise:} My PhD and postdoc at Idiap gave me extensive hands-on experience with Python, PyTorch, and modern deep learning workflows. I've worked with Vision-Language Models, developed model benchmarking methodologies, and built end-to-end reproducible ML pipelines using tools like Hydra, Weights \& Biases, and vLLM. I am comfortable adapting ML approaches to new domains and datasets.
+
+\textbf{Communication \& Customer Mindset:} Throughout my academic career, I've successfully translated complex technical concepts across audiences—presenting AI and deepfakes to forensic experts and police forces, and most recently, pitching a technical startup idea to investors at a hackathon (which my team won). I understand that effective ML application engineering is not just about technical implementation, but about understanding customer pain points, building trust through quality work, and training teams to adopt new technologies effectively.
+
+\lettersection{Why This Role Excites Me}
+After five years in academic research, I am actively transitioning toward industry roles where I can have direct impact on product design and engineering processes. The ML Application Engineer role appeals to me because it combines technical implementation with collaboration and knowledge transfer—helping real teams solve real problems. Neural Concept's focus on meaningful industries (aerospace, automotive, energy) and your commitment to making innovation "faster, smarter, and more sustainable" align perfectly with my values.
+
+I am also excited about the learning opportunity: working with CAD/CAE workflows and bridging them with deep learning would allow me to expand my engineering toolkit while leveraging my ML expertise. The collaborative, multicultural environment and hybrid model you describe match my ideal work setting.
+
+\lettersection{Practical Details}
+I am Swiss, fluent in both French (mother tongue) and English, with conversational German (B2). I am available to start in mid-May 2026 and ideally seek a position in the Lausanne area. My salary expectation is in the range of 100-120K CHF, though I am open to discussion based on the role and growth opportunities.
+
+I would welcome the opportunity to discuss how my unique profile—combining engineering foundations, ML expertise, and communication skills—could contribute to Neural Concept's mission. Thank you for considering my application.
+
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter information
+\makeletterclosing
+
+\end{document}

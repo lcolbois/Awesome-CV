@@ -50,9 +50,9 @@
 %	Comment any of the lines below if they are not required
 %-------------------------------------------------------------------------------
 % Available options: circle|rectangle,edge/noedge,left/right
-\photo[circle,noedge,right]{./sections/profile}
+\photo[circle,noedge,right]{./sections/profile.png}
 \name{Laurent}{Colbois}
-\position{Postdoctoral Researcher{\enskip\cdotp\enskip}Vision-Language Models for Forensic Biometrics}
+\position{Machine Learning Engineer{\enskip\cdotp\enskip}PhD in Machine Learning \& Biometrics}
 \address{Rue du Rhône 2, 1920 Martigny, Switzerland}
 
 \mobile{+41 79 942 29 61}
@@ -61,37 +61,21 @@
 \linkedin{lcolbois}
 \orcid{0009-0006-3547-5841}
 \googlescholar{LOLk6vAAAAAJ}{}
-%\whatsapp{(+82) 10-9030-1843}
-%\homepage{www.posquit0.com}
-%\github{posquit0}
-% \gitlab{gitlab-id}
-% \stackoverflow{SO-id}{SO-name}
-% \twitter{@twit}
-% \x{x-id}
-% \skype{skype-id}
-% \reddit{reddit-id}
-% \medium{madium-id}
-% \kaggle{kaggle-id}
-% \hackerrank{hackerrank-id}
-% \telegram{telegram-username}
-%% \firstname and \lastname will be used
-% \googlescholar{googlescholar-id}{}
-% \extrainfo{extra information}
 
 %-------------------------------------------------------------------------------
 %	LETTER INFORMATION
-%	All of the below lines must be filled out
+%	*** CUSTOMIZE FOR EACH APPLICATION ***
 %-------------------------------------------------------------------------------
 % The company being applied to
 \recipient
-  {Company Recruitment Team}
-  {Company Name\\Address Line 1\\Address Line 2}
+  {HIRING MANAGER NAME} % *** CUSTOMIZE: Use name if known, or "Hiring Team" ***
+  {COMPANY NAME\\ADDRESS LINE 1\\CITY, POSTAL CODE} % *** CUSTOMIZE: Company details ***
 % The date on the letter, default is the date of compilation
 \letterdate{\today}
 % The title of the letter
-\lettertitle{Job Application for [Position]}
+\lettertitle{Application for JOB TITLE} % *** CUSTOMIZE: Exact job title ***
 % How the letter is opened
-\letteropening{Dear Mr./Ms./Dr. LastName,}
+\letteropening{Dear HIRING MANAGER NAME,} % *** CUSTOMIZE: Use name if known, or "Hiring Team" ***
 % How the letter is closed
 \letterclosing{Sincerely,}
 % Any enclosures with the letter
@@ -117,17 +101,113 @@
 
 %-------------------------------------------------------------------------------
 %	LETTER CONTENT
+%	*** MODULAR TEMPLATE - UNCOMMENT/COMMENT VARIANTS AS NEEDED ***
 %-------------------------------------------------------------------------------
 \begin{cvletter}
 
-\lettersection{About Me}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper neque sit amet lectus facilisis sed luctus nisl iaculis. Vivamus at neque arcu, sed tempor quam. Curabitur pharetra tincidunt tincidunt. Morbi volutpat feugiat mauris, quis tempor neque vehicula volutpat. Duis tristique justo vel massa fermentum accumsan. Mauris ante elit, feugiat vestibulum tempor eget, eleifend ac ipsum. Donec scelerisque lobortis ipsum eu vestibulum. Pellentesque vel massa at felis accumsan rhoncus.
+%-------------------------------------------------------------------------------
+% OPENING PARAGRAPH - Keep for all applications, customize company/role
+%-------------------------------------------------------------------------------
+%\lettersection{About Me}
+I am writing to apply for the JOB TITLE position at COMPANY NAME. Having recently completed a postdoctoral position at Idiap Research Institute where I focused on Vision-Language Models and reproducible ML workflows, I am now transitioning from academic research to industry. I am particularly drawn to this opportunity because SPECIFIC REASON (1-2 sentences about company mission, technology, or role).
 
-\lettersection{Why Google?}
-Suspendisse commodo, massa eu congue tincidunt, elit mauris pellentesque orci, cursus tempor odio nisl euismod augue. Aliquam adipiscing nibh ut odio sodales et pulvinar tortor laoreet. Mauris a accumsan ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse vulputate sem vehicula ipsum varius nec tempus dui dapibus. Phasellus et est urna, ut auctor erat. Sed tincidunt odio id odio aliquam mattis. Donec sapien nulla, feugiat eget adipiscing sit amet, lacinia ut dolor. Phasellus tincidunt, leo a fringilla consectetur, felis diam aliquam urna, vitae aliquet lectus orci nec velit. Vivamus dapibus varius blandit.
+%-------------------------------------------------------------------------------
+% WHY THIS COMPANY/ROLE - Choose ONE variant below
+%-------------------------------------------------------------------------------
 
-\lettersection{Why Me?}
-Duis sit amet magna ante, at sodales diam. Aenean consectetur porta risus et sagittis. Ut interdum, enim varius pellentesque tincidunt, magna libero sodales tortor, ut fermentum nunc metus a ante. Vivamus odio leo, tincidunt eu luctus ut, sollicitudin sit amet metus. Nunc sed orci lectus. Ut sodales magna sed velit volutpat sit amet pulvinar diam venenatis.
+%\lettersection{Why COMPANY NAME?}
+
+% ==================== VARIANT A: Environmental/Scientific Mission ====================
+% Use for: Environmental applications, government agencies, scientific institutions
+% Examples: MeteoSuisse, EPFL, cantonal agencies, NGOs
+% UNCOMMENT THE BLOCK BELOW:
+%
+%Throughout my PhD and postdoc, I have been motivated by the desire to apply AI to challenges with meaningful societal impact. COMPANY NAME's work in SPECIFIC DOMAIN OR APPLICATION aligns perfectly with this goal. Having worked at the intersection of AI and forensic science, I understand the importance of developing trustworthy, explainable systems for real-world applications. The opportunity to contribute to SPECIFIC PROJECT OR MISSION is particularly exciting, as it combines technical rigor with practical impact in DOMAIN.
+%
+% =====================================================================================
+
+% ==================== VARIANT B: Technical/Product Focus ====================
+% Use for: Tech companies, startups, engineering-focused roles
+% Examples: Neural Concept, tech companies in Lausanne/Geneva
+% UNCOMMENT THE BLOCK BELOW:
+%
+%I am impressed by COMPANY NAME's innovative approach to SPECIFIC TECHNOLOGY OR PRODUCT. Your work on SPECIFIC PROJECT OR TECHNOLOGY demonstrates exactly the kind of practical, engineering-focused AI application that excites me. Throughout my research, what I enjoyed most was building reproducible ML systems and clean, maintainable code—aspects that are often undervalued in academia but crucial in industry. I am eager to bring this engineering mindset to a team focused on building robust, production-ready solutions.
+%
+% =====================================================================================
+
+% ==================== VARIANT C: Geographic/Local Impact ====================
+% Use for: Companies in Valais, roles emphasizing local presence
+% Examples: Companies in Sion, Martigny, or emphasizing Swiss values
+% UNCOMMENT THE BLOCK BELOW:
+%
+%As a resident of Martigny in Valais, I am particularly interested in opportunities that allow me to contribute to the local economy while working on meaningful technical challenges. COMPANY NAME's presence in LOCATION and commitment to SPECIFIC VALUE OR MISSION resonates strongly with my personal values. Having spent the past five years at Idiap in Martigny, I have developed deep roots in the region and am excited about the possibility of continuing to contribute to the local tech ecosystem.
+%
+% =====================================================================================
+
+% *** INSTRUCTION: Uncomment ONE of the variants above and customize with specific details ***
+
+
+%-------------------------------------------------------------------------------
+% MY KEY STRENGTHS - Choose ONE or TWO variants below
+%-------------------------------------------------------------------------------
+
+%\lettersection{What I Bring}
+
+% ==================== VARIANT A: Cross-Domain Communication ====================
+% Use when: Role involves stakeholder communication, interdisciplinary work, or consulting
+% UNCOMMENT THE BLOCK BELOW:
+%
+%One of my strongest assets is the ability to bridge technical and non-technical audiences. During my PhD, I delivered presentations on AI and deepfakes to forensic experts and police forces, translating complex ML concepts into actionable insights. This skill was further honed during a startup hackathon where our team won first place by effectively communicating our AI music generation concept to technical experts, potential customers, and investors. I excel at understanding diverse stakeholder needs and framing technical solutions in ways that resonate with different audiences.
+%
+% =====================================================================================
+
+% ==================== VARIANT B: MLOps \& Reproducible Workflows ====================
+% Use when: Role emphasizes engineering, code quality, or production ML systems
+% UNCOMMENT THE BLOCK BELOW:
+%
+My key differentiator is a strong focus on reproducible workflows and MLOps practices—skills I developed through necessity in research but which are highly valuable in industry. I have extensive hands-on experience with the modern ML engineering stack: experiment tracking (Weights \& Biases, MLFlow), workflow orchestration (Snakemake, Prefect), containerization (Docker, Apptainer), and configuration management (Hydra). I approach ML projects with an engineering mindset, prioritizing code quality, reproducibility, and maintainability. While these practices were often undervalued in academia, I pursued them because I believe they are essential for building reliable, scalable systems.
+%
+% =====================================================================================
+
+% ==================== VARIANT C: Pragmatic Problem-Solving ====================
+% Use when: Role involves product development, rapid prototyping, or practical solutions
+% UNCOMMENT THE BLOCK BELOW:
+%
+%I bring a pragmatic, results-oriented approach to problem-solving. During my postdoc, I coordinated a cross-functional project bringing together ML researchers, software developers, and legal experts to build a forensic data collection platform. My role was to translate requirements across domains, prioritize features, and ensure we delivered practical solutions within constraints. This pragmatic mindset was also evident during a startup hackathon where I rapidly prototyped a real-time MIDI music generation demo in 9 days—our team won first place by focusing on delivering a compelling demo rather than perfect code. I understand the difference between research prototypes and production systems, and I am excited to focus on the latter.
+%
+% =====================================================================================
+
+% ==================== VARIANT D: Technical Depth (VLMs, Computer Vision) ====================
+% Use when: Role specifically requires computer vision, VLMs, or deep learning expertise
+% UNCOMMENT THE BLOCK BELOW:
+%
+%During my postdoc, I developed deep expertise in Vision-Language Models, benchmarking state-of-the-art models (Gemma3, Qwen2.5-VL, InternVL3) for explainable face recognition. I designed novel evaluation metrics to quantify explanation quality and faithfulness, implementing end-to-end pipelines using PyTorch, Huggingface Transformers, and vLLM for efficient inference. Beyond VLMs, I have extensive experience across computer vision subdomains: CNNs for image classification, GANs for image synthesis, and face recognition systems. I also bring versatility through prior work in audio processing (speech enhancement, audio scene classification) during my master's at EPFL and internship at Logitech.
+%
+% =====================================================================================
+
+% *** INSTRUCTION: Uncomment ONE or TWO variants above that best match the role requirements ***
+
+
+%-------------------------------------------------------------------------------
+% LOGISTICS/AVAILABILITY - Optional, use if relevant
+%-------------------------------------------------------------------------------
+
+% ==================== Geographic Fit (Optional) ====================
+% Use when: Commute or relocation might be a concern
+% UNCOMMENT THE BLOCK BELOW IF NEEDED:
+%
+%\lettersection{Practical Considerations}
+%Regarding logistics, I currently live in Martigny and am prepared to relocate to OR commute to CITY for this position. (If remote work is offered: I appreciate your offering remote work flexibility, which would allow me to balance proximity to my partner in LOCATION with professional opportunities.) I am available to start from May 15th, 2026, or earlier if needed by mutual agreement.
+%
+% =====================================================================================
+
+
+%-------------------------------------------------------------------------------
+% CLOSING PARAGRAPH - Keep for all applications
+%-------------------------------------------------------------------------------
+
+%\lettersection{Next Steps}
+I am excited about the possibility of contributing to COMPANY NAME's mission and would welcome the opportunity to discuss how my background in computer vision, MLOps practices, and cross-domain communication can add value to your team. Thank you for considering my application. I look forward to hearing from you.
 
 \end{cvletter}
 

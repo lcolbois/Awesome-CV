@@ -1,0 +1,176 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+% \definecolor{sectiondivider}{HTML}{5D5D5D}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+% \photo[rectangle,edge,right]{./examples/profile}
+\name{Laurent}{Colbois}
+\position{Computer Vision Researcher{\enskip\cdotp\enskip}PhD in Machine Learning \& Biometrics}
+\address{Rue du Rhône 2, 1920 Martigny, Switzerland}
+
+\mobile{+41 79 942 29 61}
+\email{laurent.colbois@gmail.com}
+%\dateofbirth{January 1st, 1970}
+%\homepage{www.posquit0.com}
+%\github{posquit0}
+\linkedin{lcolbois}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{medium-id}
+% \kaggle{kaggle-id}
+% \hackerrank{hackerrank-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra information}
+
+\quote{``To create a positive impact through technology while following sustainable practices.''}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Technology Office Recruitment Team}
+  {Logitech\\EPFL Innovation Park\\Lausanne, Switzerland}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Application for Sr. AI/ML Engineer, Video Position}
+% How the letter is opened
+\letteropening{Dear Hiring Manager,}
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+\letterenclosure[Attached]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal information
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[C]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Laurent Colbois~~~·~~~Cover Letter}
+  {}
+
+% Print the title with above letter information
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+\lettersection{Why Logitech's Technology Office}
+I am excited to apply for the Sr. AI/ML Engineer, Video position at Logitech's Technology Office. Having completed my Master's in Computational Science \& Engineering at EPFL, the opportunity to return to the EPFL Innovation Park environment and contribute to breakthrough innovations in Video AI strongly resonates with me. The Technology Office's mission to bring state-of-the-art capabilities to Logitech's R\&D aligns perfectly with my research background and passion for translating cutting-edge AI research into impactful solutions.
+
+What particularly excites me is the emphasis on exploration and collaboration with academic partners—an environment where my PhD research experience and scientific mindset can thrive while tackling real-world engineering challenges.
+
+\lettersection{My Computer Vision \& VLM Expertise}
+My recent postdoctoral work at Idiap Research Institute focused on benchmarking state-of-the-art Vision-Language Models (Gemma3, Qwen2.5-VL, InternVL3) for explainable face recognition. This work involved:
+\begin{itemize}
+  \item Designing evaluation methodologies for multimodal AI systems combining vision and language
+  \item Training and scaling large models on institutional HPC infrastructure using Slurm clusters with distributed GPU computing
+  \item Implementing efficient inference pipelines with vLLM and modern MLOps practices
+\end{itemize}
+
+Throughout my PhD (2021-2025), I developed deep expertise in computer vision through work on face morphing attacks, deepfakes, and biometric systems. I designed and implemented neural network architectures including CNNs for detection tasks and GANs for synthetic data generation, publishing six peer-reviewed papers in international conferences (IJCB, ICASSP, BIOSIG).
+
+\lettersection{Technical Skills \& Research Background}
+I bring hands-on experience across the full ML lifecycle that aligns with your requirements:
+\begin{itemize}
+  \item \textbf{Deep Learning Frameworks:} Advanced PyTorch proficiency, TensorFlow experience, modern stack (Huggingface Transformers, vLLM)
+  \item \textbf{Neural Network Architectures:} CNNs, GANs, Transformers, Vision-Language Models
+  \item \textbf{HPC \& Large-Scale Training:} Extensive experience with institutional HPC clusters (Slurm), distributed GPU computing, scaling models efficiently
+  \item \textbf{Data Engineering:} Created synthetic face dataset using GANs, coordinated forensic data collection platform, implemented augmentation pipelines
+  \item \textbf{Scientific Research:} Six peer-reviewed publications, supervised four master's students, taught annual ML course
+  \item \textbf{Cross-functional Collaboration:} Coordinated multi-stakeholder projects, presented to diverse audiences from technical researchers to investors (won first place at startup hackathon)
+\end{itemize}
+
+My prior internship at Logitech (2019) on audio ML gave me initial exposure to applying research to product contexts and on-device deployment.
+
+\lettersection{Addressing the Embedded Systems Gap}
+I want to be transparent: while I have extensive experience training and scaling large models on HPC infrastructure, my experience with embedded optimization (quantization, pruning, porting to ARM/edge devices) is limited. However, I am genuinely eager to develop this skillset.
+
+I believe my strong foundation provides a solid basis for learning edge deployment:
+\begin{itemize}
+  \item My HPC optimization experience (efficient GPU utilization, distributed training, inference optimization with vLLM) demonstrates an optimization mindset transferable to resource-constrained contexts
+  \item My research background equips me to rapidly dive into new technical areas and apply state-of-the-art techniques
+  \item My prior Logitech internship included deploying a demo on embedded microcontroller, showing early exposure to on-device constraints
+\end{itemize}
+
+The Technology Office's exploration-focused mission makes this an ideal environment to expand my skills from cloud/HPC to edge deployment while contributing my existing computer vision and VLM expertise.
+
+\lettersection{Practical Details \& Looking Forward}
+I am Swiss, available to start in mid-May 2026, and excited about the Lausanne location. My salary expectation is in the range of 115-130K CHF, though I am open to discussion based on the role scope and learning opportunities.
+
+I would be thrilled to contribute to Logitech's Video AI innovations by bringing my computer vision research expertise, VLM experience, and collaborative mindset to the Technology Office team. The combination of breakthrough research, practical engineering constraints, and multidisciplinary collaboration is exactly the kind of challenge I seek.
+
+Thank you for considering my application. I look forward to discussing how my research background and technical skills can contribute to defining the future of human-machine interaction through Video AI at Logitech.
+
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter information
+\makeletterclosing
+
+\end{document}
