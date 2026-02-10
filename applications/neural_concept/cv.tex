@@ -21,7 +21,7 @@
 \documentclass[11pt, a4paper]{awesome-cv}
 
 % Configure page margins with geometry
-\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+\geometry{left=1.8cm, top=.8cm, right=1.8cm, bottom=1.8cm, footskip=.5cm}
 
 % Color for highlights
 % Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
@@ -33,13 +33,13 @@
 % Colors for text
 % Uncomment if you would like to specify your own color
 % \definecolor{darktext}{HTML}{414141}
-% \definecolor{text}{HTML}{333333}
-% \definecolor{graytext}{HTML}{5D5D5D}
+ \definecolor{text}{HTML}{222222}
+ \definecolor{graytext}{HTML}{222222}
 % \definecolor{lighttext}{HTML}{999999}
 % \definecolor{sectiondivider}{HTML}{5D5D5D}
 
 % Set false if you don't want to highlight section with awesome color
-\setbool{acvSectionColorHighlight}{true}
+\setbool{acvSectionColorHighlight}{false}
 
 % If you would like to change the social information separator from a pipe (|) to something else
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
@@ -50,9 +50,9 @@
 %	Comment any of the lines below if they are not required
 %-------------------------------------------------------------------------------
 % Available options: circle|rectangle,edge/noedge,left/right
-\photo[circle,noedge,right]{./shared/profile.png}
+\photo[circle,noedge,right]{./shared/profile.jpg}
 \name{Laurent}{Colbois}
-\position{ML Engineer{\enskip\cdotp\enskip}PhD in Machine Learning \& Biometrics}
+\position{Applied ML Engineer{\enskip\cdotp\enskip}PhD in Machine Learning \& Biometrics{\enskip\cdotp\enskip}MSc in Computational Science \& Engineering}
 \address{Rue du Rhône 2, 1920 Martigny, Switzerland}
 
 \mobile{+41 79 942 29 61}
@@ -79,7 +79,7 @@
 % \extrainfo{extra information}
 
 
-\quote{``To create a positive impact through technology while following sustainable practices."}
+%\quote{``To create a positive impact through technology while following sustainable practices."}
 
 
 
@@ -103,9 +103,10 @@
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
 \input{./summary.tex}
+\input{./education.tex}
+
 \input{./experience.tex}
-\input{./shared/education.tex}
-\input{./shared/publications.tex}
+%\input{./shared/publications.tex}
 \input{./skills.tex}
 
 

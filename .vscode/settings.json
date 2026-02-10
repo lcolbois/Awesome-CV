@@ -1,44 +1,38 @@
 {
-    // Essential: Tells the PDF viewer to look in the sibling 'builds' folder
-    "latex-workshop.latex.outDir": "../builds",
+    // Tells the PDF viewer where to find the built PDF
+    "latex-workshop.latex.outDir": "%DIR%/build",
 
     // --- TOOLS ---
     "latex-workshop.latex.tools": [
         {
-            "name": "Make (Build)",
-            "command": "make",
+            "name": "Make (app)",
+            "command": "bash",
             "args": [
-                "-C",
-                "%WORKSPACE_FOLDER%",
-                "builds/%DOCFILE%.pdf"
+                "%WORKSPACE_FOLDER%/.vscode/build.sh",
+                "%DIR%",
+                "%WORKSPACE_FOLDER%"
             ],
             "env": {}
-        },
+        }
     ],
 
     // --- RECIPES ---
     "latex-workshop.latex.recipes": [
         {
             "name": "Build (Make)",
-            "tools": [
-                "Make (Build)"
-            ]
+            "tools": ["Make (app)"]
         }
     ],
 
-    // Default recipe (Cmd/Ctrl + Alt + B)
+    // Default recipe (Ctrl+Alt+B)
     "latex-workshop.latex.recipe.default": "Build (Make)",
-// 1. Tell VS Code: "Don't use latexmk or glob patterns. Run a custom command."
+
+    // Clean via make cleantemp
     "latex-workshop.latex.clean.method": "command",
-
-    // 2. The command is 'make'
     "latex-workshop.latex.clean.command": "make",
-
-    // 3. The arguments: Change directory to root, then run the rule
     "latex-workshop.latex.clean.args": [
         "-C",
         "%WORKSPACE_FOLDER%",
         "cleantemp"
     ]
-
 }

@@ -21,7 +21,7 @@
 \documentclass[11pt, a4paper]{awesome-cv}
 
 % Configure page margins with geometry
-\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+\geometry{left=1.8cm, top=.8cm, right=1.8cm, bottom=1.8cm, footskip=.5cm}
 
 % Color for highlights
 % Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
@@ -33,13 +33,13 @@
 % Colors for text
 % Uncomment if you would like to specify your own color
 % \definecolor{darktext}{HTML}{414141}
-% \definecolor{text}{HTML}{333333}
-% \definecolor{graytext}{HTML}{5D5D5D}
+\definecolor{text}{HTML}{222222}
+\definecolor{graytext}{HTML}{222222}
 % \definecolor{lighttext}{HTML}{999999}
 % \definecolor{sectiondivider}{HTML}{5D5D5D}
 
 % Set false if you don't want to highlight section with awesome color
-\setbool{acvSectionColorHighlight}{true}
+\setbool{acvSectionColorHighlight}{false}
 
 % If you would like to change the social information separator from a pipe (|) to something else
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
@@ -50,17 +50,17 @@
 %	Comment any of the lines below if they are not required
 %-------------------------------------------------------------------------------
 % Available options: circle|rectangle,edge/noedge,left/right
-\photo[circle,noedge,right]{./profile.jpg}
+\photo[circle,noedge,right]{../../shared/profile.jpg}
 \name{Laurent}{Colbois}
-\position{Machine Learning Engineer{\enskip\cdotp\enskip}PhD in Machine Learning \& Biometrics}
+\position{Video AI Applied Research Engineer{\enskip\cdotp\enskip}PhD in Machine Learning \& Biometrics}
 \address{Rue du Rhône 2, 1920 Martigny, Switzerland}
 
 \mobile{+41 79 942 29 61}
 \email{laurent.colbois@gmail.com}
 \dateofbirth{May 2nd, 1996}
 \linkedin{lcolbois}
-\orcid{0009-0006-3547-5841}
-\googlescholar{LOLk6vAAAAAJ}{}
+%\orcid{0009-0006-3547-5841}
+%\googlescholar{LOLk6vAAAAAJ}{}
 
 %-------------------------------------------------------------------------------
 %	LETTER INFORMATION
@@ -68,14 +68,14 @@
 %-------------------------------------------------------------------------------
 % The company being applied to
 \recipient
-  {HIRING MANAGER NAME} % *** CUSTOMIZE: Use name if known, or "Hiring Team" ***
-  {COMPANY NAME\\ADDRESS LINE 1\\CITY, POSTAL CODE} % *** CUSTOMIZE: Company details ***
+  {Hiring Team} % *** CUSTOMIZE: Use name if known, or "Hiring Team" ***
+  {Cisco Systems\\Ecublens VD, Switzerland} % *** CUSTOMIZE: Company details ***
 % The date on the letter, default is the date of compilation
 \letterdate{\today}
 % The title of the letter
-\lettertitle{Application for JOB TITLE} % *** CUSTOMIZE: Exact job title ***
+\lettertitle{Application for Video AI Applied Research Engineer} % *** CUSTOMIZE: Exact job title ***
 % How the letter is opened
-\letteropening{Dear HIRING MANAGER NAME,} % *** CUSTOMIZE: Use name if known, or "Hiring Team" ***
+\letteropening{Dear Hiring Team,} % *** CUSTOMIZE: Use name if known, or "Hiring Team" ***
 % How the letter is closed
 \letterclosing{Sincerely,}
 % Any enclosures with the letter
@@ -109,7 +109,7 @@
 % OPENING PARAGRAPH - Keep for all applications, customize company/role
 %-------------------------------------------------------------------------------
 %\lettersection{About Me}
-I am writing to apply for the JOB TITLE position at COMPANY NAME. Having recently completed a postdoctoral position at Idiap Research Institute where I focused on Vision-Language Models and reproducible ML workflows, I am now transitioning from academic research to industry. I am particularly drawn to this opportunity because SPECIFIC REASON (1-2 sentences about company mission, technology, or role).
+I am writing to apply for the Video AI Applied Research Engineer position at Cisco. Having recently completed a postdoctoral position at Idiap Research Institute where I focused on Vision-Language Models and reproducible ML workflows, I am now transitioning from academic research to applied research engineering. I am particularly drawn to this opportunity because it operates at the intersection of computer vision research and product development—exactly the kind of environment where I can leverage my research background while building practical, deployable solutions. The location in Ecublens is also ideal, allowing me to remain in the French-speaking region of Switzerland.
 
 %-------------------------------------------------------------------------------
 % WHY THIS COMPANY/ROLE - Choose ONE variant below
@@ -130,9 +130,9 @@ I am writing to apply for the JOB TITLE position at COMPANY NAME. Having recentl
 % Use for: Tech companies, startups, engineering-focused roles
 % Examples: Neural Concept, tech companies in Lausanne/Geneva
 % UNCOMMENT THE BLOCK BELOW:
-%
-%I am impressed by COMPANY NAME's innovative approach to SPECIFIC TECHNOLOGY OR PRODUCT. Your work on SPECIFIC PROJECT OR TECHNOLOGY demonstrates exactly the kind of practical, engineering-focused AI application that excites me. Throughout my research, what I enjoyed most was building reproducible ML systems and clean, maintainable code—aspects that are often undervalued in academia but crucial in industry. I am eager to bring this engineering mindset to a team focused on building robust, production-ready solutions.
-%
+
+I am impressed by Cisco's approach to Video AI for real-world perception systems. Your team's focus on bridging applied research and large-scale product development—from problem formulation and data strategy through model development to production deployment—aligns perfectly with my career transition goals. Throughout my research, what I enjoyed most was building reproducible ML systems with systematic experimentation and clean code—aspects that are often undervalued in academia but essential for translating research into production. I am eager to bring this engineering mindset to a team that values both research rigor and practical impact.
+
 % =====================================================================================
 
 % ==================== VARIANT C: Geographic/Local Impact ====================
@@ -164,9 +164,9 @@ I am writing to apply for the JOB TITLE position at COMPANY NAME. Having recentl
 % ==================== VARIANT B: MLOps \& Reproducible Workflows ====================
 % Use when: Role emphasizes engineering, code quality, or production ML systems
 % UNCOMMENT THE BLOCK BELOW:
-%
-My key differentiator is a strong focus on reproducible workflows and MLOps practices—skills I developed through necessity in research but which are highly valuable in industry. I have extensive hands-on experience with the modern ML engineering stack: experiment tracking (Weights \& Biases, MLFlow), workflow orchestration (Snakemake, Prefect), containerization (Docker, Apptainer), and configuration management (Hydra). I approach ML projects with an engineering mindset, prioritizing code quality, reproducibility, and maintainability. While these practices were often undervalued in academia, I pursued them because I believe they are essential for building reliable, scalable systems.
-%
+
+My key differentiator is a strong focus on reproducible workflows and systematic experimentation—skills I developed through necessity in research but which are valuable for transitioning research models into deployed systems. I have hands-on experience with modern ML engineering tools: experiment tracking (Weights \& Biases, MLFlow), workflow orchestration (Snakemake, Prefect), containerization (Docker), and configuration management (Hydra). I approach ML projects with an engineering mindset, prioritizing code quality, reproducibility, and maintainability. While these practices were often undervalued in academia, I pursued them because I believe they are essential for building reliable systems that can transition from research to production.
+
 % =====================================================================================
 
 % ==================== VARIANT C: Pragmatic Problem-Solving ====================
@@ -180,9 +180,9 @@ My key differentiator is a strong focus on reproducible workflows and MLOps prac
 % ==================== VARIANT D: Technical Depth (VLMs, Computer Vision) ====================
 % Use when: Role specifically requires computer vision, VLMs, or deep learning expertise
 % UNCOMMENT THE BLOCK BELOW:
-%
-%During my postdoc, I developed deep expertise in Vision-Language Models, benchmarking state-of-the-art models (Gemma3, Qwen2.5-VL, InternVL3) for explainable face recognition. I designed novel evaluation metrics to quantify explanation quality and faithfulness, implementing end-to-end pipelines using PyTorch, Huggingface Transformers, and vLLM for efficient inference. Beyond VLMs, I have extensive experience across computer vision subdomains: CNNs for image classification, GANs for image synthesis, and face recognition systems. I also bring versatility through prior work in audio processing (speech enhancement, audio scene classification) during my master's at EPFL and internship at Logitech.
-%
+
+During my postdoc, I gained experience in Vision-Language Models, benchmarking state-of-the-art models (Gemma3, Qwen2.5-VL, InternVL3) for explainable face recognition. I designed novel evaluation metrics to quantify explanation quality, implementing benchmarking pipelines using PyTorch, Huggingface Transformers, and vLLM for efficient multimodal inference. My broader computer vision background includes CNNs for image classification and detection, GANs for synthetic image generation, and systematic evaluation of face recognition systems. I also bring versatility through prior work in audio processing (audio scene classification, speech enhancement) during my master's at EPFL and internship at Logitech, demonstrating adaptability across different perception modalities.
+
 % =====================================================================================
 
 % *** INSTRUCTION: Uncomment ONE or TWO variants above that best match the role requirements ***
@@ -207,7 +207,7 @@ My key differentiator is a strong focus on reproducible workflows and MLOps prac
 %-------------------------------------------------------------------------------
 
 %\lettersection{Next Steps}
-I am excited about the possibility of contributing to COMPANY NAME's mission and would welcome the opportunity to discuss how my background in computer vision, MLOps practices, and cross-domain communication can add value to your team. Thank you for considering my application. I look forward to hearing from you.
+I am excited about the possibility of contributing to Cisco's Video AI team and would welcome the opportunity to discuss how my background in multimodal perception, systematic experimentation, and reproducible workflows can support your mission of bridging research and production. I am available to start from May 15th, 2026. Thank you for considering my application, and I look forward to hearing from you.
 
 \end{cvletter}
 

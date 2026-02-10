@@ -69,8 +69,8 @@ endif
 	@ln -s ../../awesome-cv.cls $(APPDIR)/$(ID)/awesome-cv.cls
 	@ln -s ../../shared $(APPDIR)/$(ID)/shared
 	@# Copy and adapt master templates
-	@sed 's|\\input{./|\\input{./shared/|g; s|{./profile.png}|{./shared/profile.png}|g' $(SHAREDDIR)/master_cv.tex > $(APPDIR)/$(ID)/cv.tex
-	@sed 's|\\input{./|\\input{./shared/|g; s|{./profile.png}|{./shared/profile.png}|g' $(SHAREDDIR)/master_cl.tex > $(APPDIR)/$(ID)/cl.tex
+	@sed 's|\\input{./|\\input{./shared/|g; s|{./profile.jpg}|{./shared/profile.jpg}|g' $(SHAREDDIR)/master_cv.tex > $(APPDIR)/$(ID)/cv.tex
+	@sed 's|\\input{./|\\input{./shared/|g; s|{./profile.jpg}|{./shared/profile.jpg}|g' $(SHAREDDIR)/master_cl.tex > $(APPDIR)/$(ID)/cl.tex
 	@# Create placeholder app-specific sections (copy from shared as starting point)
 	@cp $(SHAREDDIR)/summary.tex $(APPDIR)/$(ID)/summary.tex
 	@cp $(SHAREDDIR)/experience.tex $(APPDIR)/$(ID)/experience.tex
