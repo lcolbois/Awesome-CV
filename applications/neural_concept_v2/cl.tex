@@ -1,0 +1,139 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.8cm, top=.8cm, right=1.8cm, bottom=1.8cm, footskip=.5cm}
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+ \definecolor{graytext}{HTML}{222222}
+% \definecolor{lighttext}{HTML}{999999}
+% \definecolor{sectiondivider}{HTML}{5D5D5D}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+% \photo[rectangle,edge,right]{./examples/profile}
+\name{Laurent}{Colbois}
+\position{Applied ML Engineer{\enskip\cdotp\enskip}PhD in Machine Learning \& Biometrics{\enskip\cdotp\enskip}MSc in Computational Science \& Engineering}
+\address{Rue du Rhône 2, 1920 Martigny, Switzerland}
+
+\mobile{+41 79 942 29 61}
+\email{laurent.colbois@gmail.com}
+%\dateofbirth{January 1st, 1970}
+%\homepage{www.posquit0.com}
+%\github{posquit0}
+\linkedin{lcolbois}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{medium-id}
+% \kaggle{kaggle-id}
+% \hackerrank{hackerrank-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra information}
+
+%\quote{``To create a positive impact through technology while following sustainable practices."}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Application Engineering Team}
+  {Neural Concept SA\\Lausanne, Switzerland}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Application for Application Engineer}
+% How the letter is opened
+\letteropening{Dear Hiring Manager,}
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+\letterenclosure[Attached]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal information
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[C]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Laurent Colbois~~~·~~~Cover Letter}
+  {}
+
+% Print the title with above letter information
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+I am applying for the Application Engineer position at Neural Concept. Having followed the company since its early days, I have always appreciated its positioning at the boundary between Machine Learning and Engineering, and its focus on applying original deep learning techniques to fundamentally reshape how physics-sensitive systems are designed and optimized.
+My background in Physics, Computational Science and Engineering, and Machine Learning puts me directly at that same intersection.
+
+Throughout my Bachelor in Physics and my Master in Computational Science and Engineering, I developed solid fundamentals in numerical simulation methods. I was involved in a plasma simulation project using a FEM/particle-in-cell combination, and another project where I developed a mixed Fourier/FEM numerical scheme with adaptive mesh and computed error estimates. During my PhD and postdoc at the Idiap Research Institute, I developed extensive experience applying deep learning methods across multiple modalities, and a rich toolset spanning core frameworks (PyTorch) to MLOps practices (containerization, experiment tracking). I do not have hands-on experience with commercial CAD/CAE packages, but the underlying methods are familiar ground, and I pick up new tooling quickly.
+
+Communicating technical work to non-technical audiences has been a consistent part of my career. Throughout my PhD, my work sat at the intersection of ML and forensic science, and I regularly presented to forensic scientists and law-enforcement personnel, translating complex AI concepts for audiences with an entirely different background and integrating their operational requirements back into my research. Last year, I won a start-up pitching hackathon, demonstrating my ability to present concisely and effectively to external stakeholders under time pressure. My experience supervising four master's theses shows my ability to transfer knowledge effectively, which speaks directly to the customer training aspect of this role.
+
+I am a native French speaker and fully fluent in English, and I hold Swiss citizenship. I would welcome the opportunity to discuss my application in an interview.
+
+
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter information
+\makeletterclosing
+
+\end{document}

@@ -1,0 +1,19 @@
+[workspace]
+authors = ["lcolbois <laurent.colbois@gmail.com>"]
+channels = ["conda-forge"]
+name = "awesomecv"
+platforms = ["linux-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+python = "3.10.*"
+numpy = "==1.26.3"
+pydantic = "*"
+markdownify = ">=0.13.1,<0.14.0"
+regex = ">=2024.4.28,<2025.0.0"
+jupyter = "*"
+
+[pypi-dependencies]
+python-jobspy = ">=1.1.79, <2"

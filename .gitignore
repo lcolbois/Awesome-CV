@@ -35,3 +35,6 @@ applications/*/build/*.synctex.gz
 ## Mac OS X metadata files:
 *.DS_Store
 
+# pixi environments
+.pixi/*
+!.pixi/config.toml
