@@ -1,0 +1,124 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.8cm, top=.8cm, right=1.8cm, bottom=1.8cm, footskip=.5cm}
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+\definecolor{text}{HTML}{222222}
+\definecolor{graytext}{HTML}{222222}
+% \definecolor{lighttext}{HTML}{999999}
+% \definecolor{sectiondivider}{HTML}{5D5D5D}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{false}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+\photo[circle,noedge,right]{../../shared/profile.jpg}
+\name{Laurent}{Colbois}
+\position{AI / Machine Learning Engineer{\enskip\cdotp\enskip}PhD in Machine Learning \& Computer Vision}
+\address{Rue du Rhône 2, 1920 Martigny, Switzerland}
+
+\mobile{+41 79 942 29 61}
+\email{laurent.colbois@gmail.com}
+\dateofbirth{May 2nd, 1996}
+\linkedin{lcolbois}
+%\orcid{0009-0006-3547-5841}
+%\googlescholar{LOLk6vAAAAAJ}{}
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	*** CUSTOMIZE FOR EACH APPLICATION ***
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Hiring Team} % *** CUSTOMIZE: Use name if known, or "Hiring Team" ***
+  {Visium\\Lausanne VD, Switzerland} % *** CUSTOMIZE: Company details ***
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Application for AI Software Engineer} % *** CUSTOMIZE: Exact job title ***
+% How the letter is opened
+\letteropening{Dear Hiring Team,} % *** CUSTOMIZE: Use name if known, or "Hiring Team" ***
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+%\letterenclosure[Attached]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal information
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[R]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Laurent Colbois~~~·~~~Cover Letter}
+  {}
+
+% Print the title with above letter information
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+I am applying for the AI Software Engineer position at Visium. After five years building and evaluating machine learning systems at the Idiap Research Institute, I am transitioning towards applied AI engineering, and Visium's focus on taking AI solutions beyond proofs of concept into production maps closely onto the direction I want to take.
+
+My research background at Idiap directly maps onto the technical core of this role. During my postdoc, I built end-to-end evaluation pipelines for multimodal Large Language Models in Python, from data preparation through automated evaluation and inference optimization. This was building on my PhD work in deep learning and computer vision, where I developed image manipulation detection models and ran systematic, large-scale evaluations on substantial image datasets. Throughout my work, I apply rigorous MLOps practices to keep my work reproducible and close to production-ready. I have not yet worked with AWS, Azure, or GCP, but my background in Slurm-managed HPC and containerized environments gives me a solid foundation to ramp up quickly, and I am always driven to learn new tools.
+
+I have a track record of effective communication across both technical and non-technical audiences, which I expect to be central in a client-facing consulting role. Throughout my PhD, my work sat at the intersection of ML and forensic science, and I regularly presented to forensic scientists and law-enforcement personnel, translating complex AI concepts for audiences with an entirely different background and integrating their operational requirements back into my research. I also coordinated a small interdisciplinary project on a forensic data collection platform, where much of my role was taking initially loose, informal needs and shaping them step by step into a concrete technical specification the team could build on. During a 9-day startup hackathon (Idiap Create Challenge 2025), I demonstrated rapid prototyping and pitching under time pressure  in a team of three, where I built the working demo end-to-end and co-presented, winning first place.
+
+In my previous position, a dedicated team handled technology transfer when applicable, while my role centred on research workflows and model benchmarking. I am now looking to be more directly involved in bringing research prototypes to finalized solutions, and Visium's end-to-end model, applied across diverse domains such as life sciences and manufacturing, is exactly the environment in which I would like to grow.
+I am a native French speaker and fully fluent in English, and I hold Swiss citizenship. My postdoc contract ended in March, so I am available immediately, and I would welcome the opportunity to discuss my application in an interview.
+
+
+
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter information
+\makeletterclosing
+
+\end{document}

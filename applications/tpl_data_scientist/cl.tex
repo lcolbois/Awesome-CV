@@ -1,0 +1,124 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+\usepackage[francais]{babel}
+% Configure page margins with geometry
+\geometry{left=1.8cm, top=.8cm, right=1.8cm, bottom=1.8cm, footskip=.5cm}
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+\definecolor{text}{HTML}{222222}
+\definecolor{graytext}{HTML}{222222}
+% \definecolor{lighttext}{HTML}{999999}
+% \definecolor{sectiondivider}{HTML}{5D5D5D}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{false}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+\photo[circle,noedge,right]{../../shared/profile.jpg}
+\name{Laurent}{Colbois}
+\position{Ingénieur en Machine Learning {\enskip\cdotp\enskip}Doctorat UNIL/Idiap}
+\address{Rue du Rhône 2, 1920 Martigny, Suisse}
+
+\mobile{+41 79 942 29 61}
+\email{laurent.colbois@gmail.com}
+\dateofbirth{2 mai 1996}
+\linkedin{lcolbois}
+%\orcid{0009-0006-3547-5841}
+%\googlescholar{LOLk6vAAAAAJ}{}
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	*** CUSTOMIZE FOR EACH APPLICATION ***
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Ressources Humaines} % *** CUSTOMIZE: Use name if known, or "Hiring Team" ***
+  {Transports publics lausannois\\Renens VD, Suisse} % *** CUSTOMIZE: Company details ***
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Postulation à : Data Scientist} % *** CUSTOMIZE: Exact job title ***
+% How the letter is opened
+\letteropening{Madame, Monsieur} % *** CUSTOMIZE: Use name if known, or "Hiring Team" ***
+% How the letter is closed
+\letterclosing{Veuillez agréer, Madame, Monsieur, mes sincères salutations.}
+% Any enclosures with the letter
+%\letterenclosure[Attached]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal information
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[R]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Laurent Colbois~~~·~~~Lettre de motivation}
+  {}
+
+% Print the title with above letter information
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+J'ai pris connaissance avec grand intérêt de votre recherche d'un∙e Data Scientist au sein du Data Office.  Utilisateur convaincu des Transports publics lausannois, je retrouve dans le contexte et les ambitions actuels des TL des valeurs qui résonnent fortement avec mon souhait d'orienter ma carrière vers des rôles à impact local, au service de la collectivité, et impliqués dans la transition écologique. Titulaire d'un doctorat en machine learning de l'UNIL/Idiap, je vous propose mes compétences en investigation analytique et en communication, qui s'appliquent idéalement à un rôle de support à la décision.
+
+Durant mon doctorat et mon postdoctorat à l'Institut de Recherche Idiap, j'ai développé une solide expérience à mener des investigations analytiques de bout en bout de façon autonome : formulation de questions précises (en collaboration avec des acteurs externes, ou comme prolongement d'un cycle d'analyse précédent), assemblage et structuration de données pertinentes, sélection ou développement de modèles appropriés, évaluation systématique pour en extraire des éléments de compréhension clairs, et restitution des résultats dans un récit cohérent adapté à des audiences variées. Mon expertise s'est principalement construite sur des données non-structurées (images, texte), mais mes résultats bruts d'expériences sont généralement des données structurées sur lesquelles j'effectue de multiples analyses (métriques, statistiques, visualisations).
+
+La nature interdisciplinaire de ma recherche, à l'intersection du machine learning, de la biométrie et des sciences forensiques, m'a placé naturellement en interface avec des publics non techniques (forces de l'ordre, juristes, étudiants en sciences forensiques), et m'a formé à vulgariser des concepts techniques pour l'audience cible et à orienter mes choix méthodologiques en fonction des besoins concrets de ces interlocuteurs. J'ai pu démontrer et renforcer ces compétences en remportant la 1ère place (15 000 CHF) d'un hackathon de ``start-up pitching'' (Idiap Create Challenge 2025) au sein d'une équipe de trois, où nous avons pratiqué la présentation d'un projet technique aussi bien à des investisseurs qu'à des clients potentiels.
+
+Côté outillage technique, je maîtrise Python et son écosystème d'analyse de données (Pandas, scikit-learn, matplotlib/seaborn, PyTorch). Conscient que mon expertise SQL doit être renforcée pour ce poste, je me forme actuellement à la syntaxe SQL et viens de réaliser dans ce contexte une petite analyse sur des données open data de transport public suisse\footnote{\url{https://github.com/lcolbois/tl-delay-analysis}}. Ma familiarité avec Pandas pour l'analyse de données rend cette transition essentiellement syntaxique. Sans avoir utilisé Azure ML directement, je travaille quotidiennement avec des clusters Slurm dans des environnements conteneurisés (Apptainer) et avec des outils MLOps (MLflow, Weights \& Biases) : la courbe d'apprentissage devrait être courte. 
+
+Je suis disponible immédiatement, à l'aise pour communiquer en anglais, et serais ravi d'échanger avec vous dans le cadre d'un entretien afin de discuter de la manière dont mon profil pourrait contribuer aux ambitions des TL.
+
+
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter information
+\makeletterclosing
+
+\end{document}

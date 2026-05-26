@@ -19,6 +19,7 @@
 %-------------------------------------------------------------------------------
 % A4 paper size by default, use 'letterpaper' for US letter
 \documentclass[11pt, a4paper]{awesome-cv}
+\usepackage[francais]{babel}
 
 % Configure page margins with geometry
 \geometry{left=1.8cm, top=.8cm, right=1.8cm, bottom=1.8cm, footskip=.5cm}
@@ -50,14 +51,14 @@
 %	Comment any of the lines below if they are not required
 %-------------------------------------------------------------------------------
 % Available options: circle|rectangle,edge/noedge,left/right
-\photo[circle,noedge,right]{../../shared/profile.jpg}
+\photo[circle,noedge,right]{./sections/profile.jpg}
 \name{Laurent}{Colbois}
-\position{Machine Learning / AI Research Engineer {\enskip\cdotp\enskip}PhD in Machine Learning \& Computer Vision}
-\address{Rue du Rhône 2, 1920 Martigny, Switzerland}
+\position{Ingénieur en Machine Learning {\enskip\cdotp\enskip}Doctorat UNIL/Idiap}
+\address{Rue du Rhône 2, 1920 Martigny, Suisse}
 
 \mobile{+41 79 942 29 61}
 \email{laurent.colbois@gmail.com}
-\dateofbirth{May 2nd, 1996}
+\dateofbirth{2 mai 1996}
 \linkedin{lcolbois}
 %\orcid{0009-0006-3547-5841}
 %\googlescholar{LOLk6vAAAAAJ}{}
@@ -105,8 +106,10 @@
 \input{./summary.tex}
 \input{./experience.tex}
 \pagebreak
-\input{../../shared/education.tex}
+\input{./sections/education.tex}
 \input{./skills.tex}
+\input{./sections/presentation.tex}
+\input{./sections/projects.tex}
 \input{./publications.tex}
 
 
