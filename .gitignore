@@ -14,6 +14,7 @@
 # Option 1: Ignore all build artifacts including PDFs
 applications/*/build/
 shared/build/
+_base/build/
 
 # Option 2: Keep PDFs, ignore only temp files (uncomment below, comment above)
 applications/*/build/*.aux
